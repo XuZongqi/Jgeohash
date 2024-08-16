@@ -1,5 +1,7 @@
 package jgeohash.main_files.cangjie.xuzongqi.jgeohash.distance
 import std.math
+//必须得先插入具体的类且public才能调用
+import jgeohash.main_files.cangjie.xuzongqi.jgeohash.api.Position
 
 //import lombok.experimental.UtilityClass;
 //TODO：应该@UtilityClass
@@ -29,7 +31,7 @@ public class DistanceCalculator
         return degrees*pi/180.0
     }
 	//给两个点的位置算球面距离，西经为负，南纬为负
-    public func distance(startLatitude:Float64,startLongitude:Float64,endLatitude:Float64,endLongitude:Float64,MeasuringUnit:String):Float64
+    public func distance(startLatitude:Float64,startLongitude:Float64,endLatitude:Float64,endLongitude:Float64,measuringUnit:String):Float64
      {
 
         //求弧度,值获取时分成固定和不固定两种
@@ -54,7 +56,8 @@ public class DistanceCalculator
 		// {
 		// 	print("成功，返回值为"+)
 		// }
-		match(MeasuringUnit)
+		
+		match(measuringUnit)
 		{
 			case "MILE"=>targetDistance*= 0.621371
 			case "METER"=>targetDistance*=1000.0
@@ -64,4 +67,12 @@ public class DistanceCalculator
 		}
         return targetDistance
      }
+
+	 public func distanceBetweenPoints(start:Position,end:Position,measuringUnit:String):Float64
+	 {
+		// if(start.getLatitude()!=&&start.getLongitude!=None&&end.getLatitude!=None&&end.getLongitude!=None)
+		var targetDistance:Float64
+		targetDistance=distance(start.getLatitude(),start.getLongitude(),end.getLatitude(),end.getLongitude(),measuringUnit)
+		return targetDistance
+	 }
 }

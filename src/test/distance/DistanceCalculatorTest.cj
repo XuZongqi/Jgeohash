@@ -1,6 +1,6 @@
 package jgeohash.test.distance
 
-import jgeohash.*
+// import jgeohash.*
 import jgeohash.main_files.cangjie.xuzongqi.jgeohash.distance.DistanceCalculator
 
 import std.unittest.*
@@ -10,7 +10,7 @@ import serialization.serialization.*
 
 
 @Test
-class TestDaprException {
+class TestDistanceCalculator {
     @TestCase
     func distance_test() {
         let startLatitude = 40.7128

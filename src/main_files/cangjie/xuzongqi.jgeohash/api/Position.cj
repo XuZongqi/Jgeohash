@@ -1,36 +1,34 @@
 package jgeohash.main_files.cangjie.xuzongqi.jgeohash.api
 import serialization.serialization.*
-interface Position { 
-    // func f(): Unit
-    /**
-	 * Gets the latitude.
-	 *
-	 * @return the latitude
-	 */
-	func getLatitude():Float64
+public abstract class Position { 
+	private var latitude:Float64
+	private var longitude:Float64
 
-	/**
-	 * Gets the longitude.
-	 *
-	 * @return the longitude
-	 */
-	func getLongitude():Float64
+	public init(latitude:Float64,longitude:Float64) {
+        this.latitude = latitude
+        this.longitude = longitude
+    }
 
-	/**
-	 * Sets the latitude.
-	 *
-	 * @param latitude
-	 *            the new latitude
-	 */
+	public func getLatitude():Float64
+	{
+		return latitude
+	}
+
+
+	public func getLongitude():Float64
+	{
+		return longitude
+	}
+
     // 无参时返回类型是Unit
-	func setLatitude(latitude:Float64):Unit
+	public func setLatitude(latitude:Float64):Unit
+	{
+		this.latitude=latitude
+	}
 
-	/**
-	 * Sets the longitude.
-	 *
-	 * @param longitude
-	 *            the new longitude
-	 */
-	func setLongitude(longitude:Float64):Unit
+	public func setLongitude(longitude:Float64):Unit
+	{
+		this.longitude=longitude
+	}
 
 }

@@ -1,6 +1,6 @@
 package jgeohash.test.distance
 
-import jgeohash.*
+// import jgeohash.*
 import jgeohash.main_files.cangjie.xuzongqi.jgeohash.distance.DistanceCalculator
 
 import std.unittest.*
@@ -10,7 +10,7 @@ import serialization.serialization.*
 
 
 /* ===== Emitted by MacroCall @Test in distancecalculatortest.cj:12:1 ===== */
-/* 12.1 */@Attribute[TEST_GENERATED] class TestDaprException <: TestClass {
+/* 12.1 */@Attribute[TEST_GENERATED] class TestDistanceCalculator <: TestClass {
 /* 12.2 */    @Attribute[TestCase_0]
 /* 12.3 */    func distance_test() {
 /* 12.4 */        let startLatitude = 40.7128
@@ -32,7 +32,7 @@ import serialization.serialization.*
 /* 12.20 */    public override func asTestSuite(): TestSuite {
 /* 12.21 */        
 /* 12.22 */        let suiteConfiguration = classConfiguration()
-/* 12.23 */        let suiteBuilder = TestSuite.builder("TestDaprException").configure(suiteConfiguration)
+/* 12.23 */        let suiteBuilder = TestSuite.builder("TestDistanceCalculator").configure(suiteConfiguration)
 /* 12.24 */        let m___ = TimeNow()
 /* 12.25 */        suiteConfiguration.set < Measurement >("measurement", m___)
 /* 12.26 */        
@@ -56,8 +56,8 @@ import serialization.serialization.*
 /* 12.44 */
 /* 12.45 */extend TestPackage {
 /* 12.46 */    @Attribute[TEST_REGISTER]
-/* 12.47 */    func registerTestDaprException() {
-/* 12.48 */        registerSuite({ => TestDaprException().asTestSuite() })
+/* 12.47 */    func registerTestDistanceCalculator() {
+/* 12.48 */        registerSuite({ => TestDistanceCalculator().asTestSuite() })
 /* 12.49 */    }
 /* 12.50 */}
 /* 12.51 */
