@@ -1,0 +1,64 @@
+package jgeohash.test.distance
+
+import jgeohash.*
+import jgeohash.main_files.cangjie.xuzongqi.jgeohash.distance.DistanceCalculator
+
+import std.unittest.*
+import std.unittest.testmacro.*
+import encoding.json.*
+import serialization.serialization.*
+
+
+/* ===== Emitted by MacroCall @Test in distancecalculatortest.cj:12:1 ===== */
+/* 12.1 */@Attribute[TEST_GENERATED] class TestDaprException <: TestClass {
+/* 12.2 */    @Attribute[TestCase_0]
+/* 12.3 */    func distance_test() {
+/* 12.4 */        let startLatitude = 40.7128
+/* 12.5 */        let startLongitude = - 74.0060
+/* 12.6 */        let endLatitude = 34.0522
+/* 12.7 */        let endLongitude = - 118.2437
+/* 12.8 */        let dc = DistanceCalculator()
+/* 12.9 */        let actual = dc.distance(startLatitude, startLongitude, endLatitude, endLongitude, "MILE")
+/* 12.10 */        assertEqual("Expected Wrapper", "Actual Wrapper", 10.0, actual)
+/* 12.11 */    }
+/* 12.12 */    
+/* 12.13 */    init() {
+/* 12.14 */    }
+/* 12.15 */    private func classConfiguration(): Configuration {
+/* 12.16 */        let configuration = Configuration()
+/* 12.17 */        
+/* 12.18 */        return configuration
+/* 12.19 */    }
+/* 12.20 */    public override func asTestSuite(): TestSuite {
+/* 12.21 */        
+/* 12.22 */        let suiteConfiguration = classConfiguration()
+/* 12.23 */        let suiteBuilder = TestSuite.builder("TestDaprException").configure(suiteConfiguration)
+/* 12.24 */        let m___ = TimeNow()
+/* 12.25 */        suiteConfiguration.set < Measurement >("measurement", m___)
+/* 12.26 */        
+/* 12.27 */        { => let caseConfig = Configuration()
+/* 12.28 */            
+/* 12.29 */            let distance_testTestFunc = { => distance_test();() }
+/* 12.30 */            suiteBuilder.add(
+/* 12.31 */            UnitTestCase.create(
+/* 12.32 */            "distance_test",
+/* 12.33 */            configuration: caseConfig,
+/* 12.34 */            body: distance_testTestFunc
+/* 12.35 */            )
+/* 12.36 */            )
+/* 12.37 */            
+/* 12.38 */        }()
+/* 12.39 */        
+/* 12.40 */        return suiteBuilder.build()
+/* 12.41 */    }
+/* 12.42 */}
+/* 12.43 */
+/* 12.44 */
+/* 12.45 */extend TestPackage {
+/* 12.46 */    @Attribute[TEST_REGISTER]
+/* 12.47 */    func registerTestDaprException() {
+/* 12.48 */        registerSuite({ => TestDaprException().asTestSuite() })
+/* 12.49 */    }
+/* 12.50 */}
+/* 12.51 */
+/* ===== End of the Emit ===== */

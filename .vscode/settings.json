@@ -1,0 +1,19 @@
+{
+	"CangjieSdk.Option": "CJNative",
+	"terminal.integrated.env.windows": {
+		"CANGJIE_HOME": "D:\\OpenSource\\Cangjie\\Cangjie-0.53.4-windows_x64",
+		"CANGJIE_PATH": "D:\\OpenSource\\Cangjie\\Cangjie-0.53.4-windows_x64\\runtime\\lib\\windows_x86_64_llvm;D:\\OpenSource\\Cangjie\\Cangjie-0.53.4-windows_x64\\bin;D:\\OpenSource\\Cangjie\\Cangjie-0.53.4-windows_x64\\tools\\bin;D:\\OpenSource\\Cangjie\\Cangjie-0.53.4-windows_x64\\debugger\\bin;",
+		"PATH": "${config:terminal.integrated.env.windows.CANGJIE_PATH};${env:PATH}"
+	},
+	"editor.gotoLocation.alternativeDeclarationCommand": "editor.action.revealDefinition",
+	"editor.gotoLocation.alternativeDefinitionCommand": "editor.action.revealDefinition",
+	"editor.gotoLocation.alternativeTypeDefinitionCommand": "editor.action.revealDefinition",
+	"editor.selectionHighlight": false,
+	"files.autoSave": "onFocusChange",
+	"editor.suggest.snippetsPreventQuickSuggestions": false,
+	"editor.quickSuggestions": {
+		"other": "on",
+		"comments": "off",
+		"strings": "on"
+	}
+}

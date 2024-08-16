@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Cangjie (CJNative): launch",
+            "program": "d:\\VSCode\\VS_projects\\Cangjie_Projects\\jgeohash\\target\\debug\\bin\\main.exe",
+            "request": "launch",
+            "type": "cangjieDebug",
+            "externalConsole": false,
+            "buildBeforeLaunch": true,
+            "env": {
+                "PATH": "D:\\OpenSource\\Cangjie\\Cangjie-0.53.4-windows_x64\\runtime\\lib\\windows_x86_64_llvm"
+            },
+            "debugMacro": false
+        }
+    ]
+}
