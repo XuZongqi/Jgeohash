@@ -1,4 +1,4 @@
-package jgeohash.main_files.cangjie.xuzongqi.jgeohash.api
+package jgeohash.main_files.cangjie.xuzongqi_jgeohash.api
 import serialization.serialization.*
 public abstract class Position { 
 	private var latitude:Float64

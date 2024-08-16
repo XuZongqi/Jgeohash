@@ -1,7 +1,7 @@
 package jgeohash.test.distance
 
 // import jgeohash.*
-import jgeohash.main_files.cangjie.xuzongqi.jgeohash.distance.DistanceCalculator
+import jgeohash.main_files.cangjie.xuzongqi_jgeohash.distance.DistanceCalculator
 
 import std.unittest.*
 import std.unittest.testmacro.*

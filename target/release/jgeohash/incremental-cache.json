@@ -1,5 +1,62 @@
 {
-  "packageInformation": {},
+  "packageInformation": {
+    "jgeohash.main_files.cangjie": {
+      "rootPackageName": "jgeohash",
+      "fileNameHash": "4953659051498195622",
+      "timeStamp": 1723815382,
+      "buildFlag": true,
+      "exeName": ""
+    },
+    "jgeohash": {
+      "rootPackageName": "jgeohash",
+      "fileNameHash": "2351328859765371875",
+      "timeStamp": 1723816042,
+      "buildFlag": false,
+      "exeName": "main"
+    },
+    "jgeohash.main_files": {
+      "rootPackageName": "jgeohash",
+      "fileNameHash": "-743543390062567158",
+      "timeStamp": 1723815393,
+      "buildFlag": true,
+      "exeName": ""
+    },
+    "jgeohash.main_files.cangjie.xuzongqi_jgeohash": {
+      "rootPackageName": "jgeohash",
+      "fileNameHash": "-3086747047156139896",
+      "timeStamp": 1723815993,
+      "buildFlag": true,
+      "exeName": ""
+    },
+    "jgeohash.test": {
+      "rootPackageName": "jgeohash",
+      "fileNameHash": "-2775793891883443257",
+      "timeStamp": 1723815422,
+      "buildFlag": true,
+      "exeName": ""
+    },
+    "jgeohash.main_files.cangjie.xuzongqi_jgeohash.distance": {
+      "rootPackageName": "jgeohash",
+      "fileNameHash": "-2853470171219644972",
+      "timeStamp": 1723815988,
+      "buildFlag": true,
+      "exeName": ""
+    },
+    "jgeohash.main_files.cangjie.xuzongqi_jgeohash.api": {
+      "rootPackageName": "jgeohash",
+      "fileNameHash": "-6656419899865895527",
+      "timeStamp": 1723815976,
+      "buildFlag": true,
+      "exeName": ""
+    },
+    "jgeohash.test.distance": {
+      "rootPackageName": "jgeohash",
+      "fileNameHash": "7149900955198803220",
+      "timeStamp": 1723816000,
+      "buildFlag": true,
+      "exeName": ""
+    }
+  },
   "jsonHash": "7358257297761703131",
   "rootPackageName": "jgeohash"
 }

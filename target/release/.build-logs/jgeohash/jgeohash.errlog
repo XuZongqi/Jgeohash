@@ -1,0 +1,8 @@
+[31merror[0m: 'main' is missing
+ [36m==>[0m D:\VSCode\VS_projects\Cangjie_Projects\jgeohash\src\init.cj:1:1:
+  [36m| [0m
+[36m1[0m [36m| [0mpackage jgeohash[0m
+  [36m| [0m[31m^ [0m
+  [36m| [0m
+
+1 error generated, 1 error printed.

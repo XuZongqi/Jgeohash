@@ -1,7 +1,7 @@
-package jgeohash.main_files.cangjie.xuzongqi.jgeohash.distance
+package jgeohash.main_files.cangjie.xuzongqi_jgeohash.distance
 import std.math
 //必须得先插入具体的类且public才能调用
-import jgeohash.main_files.cangjie.xuzongqi.jgeohash.api.Position
+import jgeohash.main_files.cangjie.xuzongqi_jgeohash.api.Position
 
 //import lombok.experimental.UtilityClass;
 //TODO：应该@UtilityClass
