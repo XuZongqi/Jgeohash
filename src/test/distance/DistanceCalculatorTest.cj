@@ -11,6 +11,7 @@ import serialization.serialization.*
 
 @Test
 class TestDistanceCalculator {
+
     @TestCase
     func distance_test() {
         let startLatitude = 40.7128
@@ -20,7 +21,8 @@ class TestDistanceCalculator {
         
         let dc=DistanceCalculator()
         let actual=dc.distance(startLatitude,startLongitude,endLatitude,endLongitude,"MILE")
-        assertEqual("Expected Wrapper", "Actual Wrapper", 10.0, actual)
+        // assertEqual("Expected Wrapper", "Actual Wrapper", 10.0, actual)
+        @Assert(actual,10.0)
         
     }
 
