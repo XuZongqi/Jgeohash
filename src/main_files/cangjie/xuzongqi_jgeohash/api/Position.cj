@@ -9,24 +9,23 @@ public abstract class Position {
         this.longitude = longitude
     }
 
-	public func getLatitude():Float64
+	public open func getLatitude():Float64
 	{
-		return latitude
+		return this.latitude
 	}
 
-
-	public func getLongitude():Float64
+	public open func getLongitude():Float64
 	{
-		return longitude
+		return this.longitude
 	}
 
     // 无参时返回类型是Unit
-	public func setLatitude(latitude:Float64):Unit
+	public open func setLatitude(latitude:Float64):Unit
 	{
 		this.latitude=latitude
 	}
 
-	public func setLongitude(longitude:Float64):Unit
+	public open func setLongitude(longitude:Float64):Unit
 	{
 		this.longitude=longitude
 	}
